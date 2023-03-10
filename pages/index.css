@@ -1,2 +1,99 @@
 @import url('../vendor/normalize.css');
+@import url('../fonts/fonts.css');
 
+.wrapper {
+    background-color: #2A2C2F;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    
+
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 28px;
+    width: 93%;
+}
+
+.header__logo {
+
+}
+
+.header__lang-link {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: normal;
+}
+
+.header__lang-link:last-of-type {
+margin-left: 18px;
+}
+
+.header__lang-link:visited {
+    color: white;
+}
+
+.header__lang-link[lang="ru"]{
+    text-decoration: underline;
+}
+
+
+
+
+
+.content {
+
+}
+
+
+
+
+.lead {
+    margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lead__title {
+    line-height: 100px;
+    font-weight: 900;
+    font-size: 96px;
+    max-width: 720px;
+    text-align: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+.lead__subtitle {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+
+    margin: 64px 0 0 0;
+    padding: 0;
+
+    max-width: 640px;
+}
+
+.lead__image {
+    margin-top: 64px;
+    max-width: 984px;
+}
