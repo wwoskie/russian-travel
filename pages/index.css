@@ -3,6 +3,9 @@
 
 .wrapper {
     background-color: #2A2C2F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .page {
@@ -11,7 +14,6 @@
     align-items: center;
     max-width: 1280px;
     width: 100%;
-    margin: 0 auto;
     
 
     font-family: 'Inter', sans-serif;
@@ -25,7 +27,8 @@
     justify-content: space-between;
     align-items: end;
     margin-top: 28px;
-    width: 1184px;
+    max-width: 1184px;
+    width: 100%;
 }
 
 .header__logo {
