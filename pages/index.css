@@ -13,12 +13,12 @@
     flex-direction: column;
     align-items: center;
     max-width: 1280px;
-    width: 100%;
     
 
     font-family: 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: white;
 }
 
 .header {
@@ -26,9 +26,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: end;
-    margin-top: 28px;
+    margin: 28px 0 0 0;
     max-width: 1184px;
-    width: 100%;
+    width: calc(100% - 96px);
 }
 
 .header__logo {
@@ -40,11 +40,11 @@
 }
 
 .header__lang-link {
-    color: white;
     text-decoration: none;
     font-size: 24px;
     line-height: 28px;
     font-weight: normal;
+    color: white;
 }
 
 .header__lang-link:last-of-type {
@@ -79,7 +79,7 @@ margin-left: 18px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 984px;
+    width: calc(100% - 96px);
 }
 
 .lead__title {
@@ -106,8 +106,9 @@ margin-left: 18px;
 }
 
 .lead__image {
-    margin-top: 64px;
+    margin: 64px 48px 0 48px;
     max-width: 984px;
+    width: 100%;
 }
 
 .lead__caption {
@@ -116,10 +117,11 @@ margin-left: 18px;
     line-height: 14px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    align-self: flex-start;
 
-    margin: 8px 0 0 0;
+    margin: 8px 48px 0 48px;
     padding: 0;
+    max-width: 984px;
+    width: 100%;
 }
 
 
@@ -130,11 +132,10 @@ margin-left: 18px;
 
 
 .intro {
-    max-width: 984px;
-    width: 100%;
+    width: calc(100% - 96px);
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 92px;
 }
 
@@ -142,10 +143,18 @@ margin-left: 18px;
     margin: 0;
     padding: 0;
 
+    max-width: 984px;
+    width: 100%;
+
     font-style: normal;
     font-weight: 900;
     font-size: 54px;
     line-height: 58px;
+}
+
+.intro__container {
+    max-width: 984px;
+    width: 100%;
 }
 
 .intro__text {
@@ -198,7 +207,7 @@ margin-left: 18px;
     display: grid;
     gap: 16px;
 
-    max-width: 1184px;
+    width: calc(100% - 96px);
 
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -209,28 +218,35 @@ margin-left: 18px;
 }
 
 
+
+
+
 /*section places*/
 
 .places {
     margin-top: 92px;
-    max-width: 984px;
-    width:100%;
+    width: calc(100% - 96px);
 
 }
 
 .places__list {
     margin: 0;
     padding: 0;
-    list-style-type: none;    
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
 }
 
 .place {
     display: grid;
-    grid-template-columns: minmax(440px, 460px) 1fr;
+    grid-template-columns: calc(100% * 0.4675) 1fr;
     grid-template-rows: repeat(2, min-content);
     column-gap: 40px;
     row-gap: 48px;
     margin-top: 80px;
+    max-width: 984px;
+    width: 100%;
 }
 
 .place:first-of-type {
@@ -249,8 +265,7 @@ margin-left: 18px;
 }
 
 .place__image {
-    max-height: 460px;
-    max-width: 460px;
+    width: 100%;
 }
 
 .place__website {
@@ -311,7 +326,7 @@ margin-left: 18px;
 
 .cover {
     position: relative;
-    margin-top: 92px;
+    margin: 92px 0 0 0;
     
     display: flex;
     flex-direction: column;
@@ -320,8 +335,8 @@ margin-left: 18px;
 
     background-image: url('../images/cover-trains.jpg');
     min-height: 740px;
-    min-width: 1184px;
-    width:100%
+    
+    width: calc(100% - 96px);
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -386,7 +401,7 @@ margin-left: 18px;
 .footer {
     display: flex;
     flex-direction: row;
-    width: 1184px;
+    width: calc(100% - 96px);
     justify-content: space-between;
 
     margin: 92px 0 24px 0;
@@ -424,7 +439,37 @@ margin-left: 18px;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    /* identical to box height, or 114% */
     
     text-align: right;   
+}
+
+
+
+@media screen and (max-width: 1025px) {
+    .photo-grid {
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 48px;
+        margin-right: 48px;
+
+        gap: 14px;
+    }
+
+    .lead__image {
+        margin-top: 56px;
+    }
+
+    .place {
+        display: grid;
+        grid-template-columns: 440px 1fr;
+        column-gap: 32px;
+    }
+
+    .cover {
+        min-height: 640px;
+        width: 100%;
+    }
+
+
+
+
 }
