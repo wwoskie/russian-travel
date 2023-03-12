@@ -1,0 +1,26 @@
+.cover__subtitile {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    max-width: 360px;
+
+    margin: 32px 0 0 0;
+    padding: 0;
+    z-index: 1;
+}
+
+@media screen and (max-width: 680px) {
+    .cover__subtitile {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+
+    .cover__subtitile {
+        margin-top: 16px;
+    }
+}

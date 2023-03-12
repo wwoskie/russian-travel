@@ -1,0 +1,12 @@
+.place__text-container {
+
+}
+
+@media screen and (max-width: 470px) {
+
+
+    .place__text-container {
+        margin: 0 16px 0 16px;
+
+    }
+}
