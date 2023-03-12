@@ -19,10 +19,6 @@
   color: white;
 }
 
-.header__lang-link[lang="ru"] {
-  text-decoration: underline;
-}
-
 @media screen and (max-width: 470px) {
 
   .header__lang-link {
