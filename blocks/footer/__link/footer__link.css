@@ -1,24 +1,12 @@
 .footer__link {
     text-decoration: none;
     color: #FFFFFF;
-    margin: 0 0 0 18px;
     padding: 0;
 
-    font-family: 'Inter';
-    font-style: normal;
+    font-style: normal; /*в предыдущей попытке я зря подгружал сюда шрифт, все шрифты и альтернатива к ним подгружаются в оболочке всей страницы*/
     font-weight: 400;
     font-size: 16px;
     line-height: 112%;
-}
-
-.footer__link:first-of-type {
-    margin: 0;
-}
-
-@media screen and (max-width: 680px) {
-    .footer__link {
-        margin: 32px 0 0 0;
-    }
 }
 
 @media screen and (max-width: 470px) {

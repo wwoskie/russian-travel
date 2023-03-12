@@ -16,7 +16,6 @@
 @media screen and (max-width: 1025px) {
 
     .place {
-        display: grid;
         grid-template-columns: calc(100% * 0.4741) 1fr;
         column-gap: 32px;
     }
@@ -25,7 +24,6 @@
 @media screen and (max-width: 769px) {
 
     .place {
-        display: grid;
         grid-template-columns: calc(100% * 0.472) 1fr;
         grid-template-rows: repeat(2, min-content);
         column-gap: 28px;
@@ -34,7 +32,7 @@
     }
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 620px) {
 
     .place {
         margin-top: 50px;

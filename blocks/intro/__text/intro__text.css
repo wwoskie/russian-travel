@@ -4,7 +4,7 @@
 
     max-width: 690px;
 
-    font-family: 'Inter';
+    /*раньше здесь был ошибочный импорт шрифта (импортировались ранее)*/
     font-style: normal;
     font-weight: 400;
     font-size: 16px;

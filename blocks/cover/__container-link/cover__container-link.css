@@ -5,3 +5,19 @@
     text-decoration: none;
     color: #FFFFFF;
 }
+
+.cover__container-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #2A2C2F;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+}
+
+.cover__container-link:hover::before {
+    opacity: 0.8;
+    transition: opacity linear 0.5s;
+}

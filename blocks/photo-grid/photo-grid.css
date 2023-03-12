@@ -5,16 +5,13 @@
 
     width: calc(100% - 96px);
 
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr); /*TODO improve adaptiveness using auto-fit & minmax*/
+    grid-template-rows: repeat(auto-fit, 1fr);
 }
 
 @media screen and (max-width: 1025px) {
     .photo-grid {
         grid-template-columns: repeat(3, 1fr);
-        margin-left: 48px;
-        margin-right: 48px;
-
         gap: 14px;
     }
 }
@@ -22,8 +19,7 @@
 @media screen and (max-width: 769px) {
     .photo-grid {
         margin: 88px 24px 0 24px;
-        display: grid;
-    
+
         width: calc(100% - 48px);
     
         grid-template-columns: repeat(2, 1fr);
@@ -40,7 +36,6 @@
 @media screen and (max-width: 470px) {
     .photo-grid {
         margin: 64px 0 0 0;
-        display: grid;
         gap: 12px;
     
         grid-template-columns: 1fr;
