@@ -25,10 +25,8 @@
 
     .place {
         grid-template-columns: calc(100% * 0.472) 1fr;
-        grid-template-rows: repeat(2, min-content);
         column-gap: 28px;
         margin-top: 73px;
-        width: 100%;
     }
 }
 
